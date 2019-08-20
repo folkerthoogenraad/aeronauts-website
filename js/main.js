@@ -7,13 +7,10 @@ window.mobilecheck = function() {
 
 window.addEventListener('load', ()=>{
 
-    console.log("doing it");
     if(!window.mobilecheck()){
         // Assuming one
         var sources = document.querySelectorAll('video source');
         var video = document.querySelector('video');
-        
-        console.log("all of it");
 
         for(var i = 0; i < sources.length; i++){
             sources[i].setAttribute("src", sources[i].getAttribute("data-src"));
@@ -22,4 +19,14 @@ window.addEventListener('load', ()=>{
         video.load();
     }
 
+});
+
+window.addEventListener('scroll', ()=>{
+    var top = (window.pageYOffset || document.scrollTop)  - (document.clientTop || 0);
+
+    var el = document.getElementById('background_video');
+    var el2 = document.getElementById('background_image');
+
+    el.style.top = (top * 0.5) + "px";
+    el2.style.top = (top * 0.5) + "px";
 });
