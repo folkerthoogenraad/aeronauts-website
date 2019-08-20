@@ -126,6 +126,7 @@ article.info {
     overflow:hidden;
 
     min-height:100px;
+    padding:0 20px;
 }
 article.info p{
     max-width:1024px;
@@ -167,7 +168,23 @@ h1.title{
 .background_dark{
     background:black;
 }
+.background_red{
+    background: #db5945
+}
+.background_green{
+    background:#889E4F
+}
+.background_blue{
+    background:#448F88
+}
 
+footer{
+    color:#999;
+    font-weight: lighter;
+    font-size:12px;
+    text-align: center;
+    padding:20px;
+}
 
 @media only screen and (max-width: 768px) {
     h1 {
