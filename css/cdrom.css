@@ -1,0 +1,25 @@
+
+.cdrom{
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 5px 0px white;
+    background:black;
+    position: absolute;
+    
+    font-weight: bold;
+    color:white;
+
+    left:0px;
+    top:0px;
+    width:auto;
+    padding:10px;
+}
+.cdrom span{
+    font-size: 20px;
+    vertical-align: center;
+    letter-spacing: 2px;
+}
+.cdrom span.large{
+    font-size: 30px;
+    margin:5px;
+    vertical-align: center;
+}
