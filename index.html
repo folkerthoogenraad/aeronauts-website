@@ -9,8 +9,10 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/cdrom.css">
+    <link rel="stylesheet" href="css/aeronauts-mini.css">
 
     <script src="js/main.js"></script>
+    <script src="js/aeronauts-mini.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -18,27 +20,27 @@
 </head>
 <body>
     <div class="cdrom" style="display:none;"><span class="large">PC</span><span>CD-ROM</span></div>
-    <header>
 
-    </header>
+    <canvas id="aeronauts"></canvas>
 
+    <!-- Shouln't this be a header? -->
     <article class="poster">
         <div class="content">
             <div class="cover_image" id="background_image"></div>
-            <h1 class="title">AERONAUTS</h1>
-
             <video autoplay muted loop id="background_video">
                 <source data-src="videos/Flight.mp4" type="video/mp4">
             </video>
+            <div class="dim" id="dim"></div>
+            <h1 class="title" data-destroyable-subdivision>AERONAUTS</h1>
         </div>
               
-        <button onclick="alert('Hold your horses cowboy, this is not ready yet.')">Watch the trailer now</button>
-        <button onclick="alert('Hold your horses cowboy, this is not ready yet.')">Whishlist On Steam</button>
+        <button data-destroyable>Watch the trailer now</button>
+        <button data-destroyable>Whishlist On Steam</button>
         <footer>
-            <img src="icons/facebook.png" alt="Facebook">
-            <img src="icons/instagram.png" alt="Instagram">
-            <img src="icons/twitter.png" alt="Twitter">
-            <img src="icons/youtube.png" alt="YouTube">
+            <a data-destroyable href="https://www.youtube.com/"><img src="icons/facebook.png" alt="Facebook"></a>
+            <a data-destroyable href="https://www.youtube.com/"><img src="icons/instagram.png" alt="Instagram"></a>
+            <a data-destroyable href="https://www.youtube.com/"><img src="icons/twitter.png" alt="Twitter"></a>
+            <a data-destroyable href="https://www.youtube.com/"><img src="icons/youtube.png" alt="Youtube"></a>
         </footer>
     </article>
 

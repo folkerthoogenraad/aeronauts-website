@@ -20,13 +20,3 @@ window.addEventListener('load', ()=>{
     }
 
 });
-
-window.addEventListener('scroll', ()=>{
-    var top = (window.pageYOffset || document.scrollTop)  - (document.clientTop || 0);
-
-    var el = document.getElementById('background_video');
-    var el2 = document.getElementById('background_image');
-
-    el.style.top = (top * 0.5) + "px";
-    el2.style.top = (top * 0.5) + "px";
-});

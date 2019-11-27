@@ -1,0 +1,15 @@
+#aeronauts{
+   position: fixed;
+   top:0;
+   left:0;
+
+   z-index: 10;
+
+   pointer-events: none;
+
+   /* This doesn't do much for canvas but hey*/
+   width:100%;
+   height:100%;
+
+   image-rendering: pixelated;
+}
